@@ -16,7 +16,7 @@ function divThenMult(num1, num2, num3){
 divThenMult(10, 5, 3)
 // Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
 function cubeRoot(num){
-    let root = Math.sqrt(num)
+    let root = Math.cbrt(num)
     console.log(root)
 }
 cubeRoot(16)
