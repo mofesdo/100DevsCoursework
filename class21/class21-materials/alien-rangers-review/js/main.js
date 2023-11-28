@@ -18,7 +18,6 @@ console.log(evenNums)
 //Create a function that takes in an array of numbers
 function secondBest(arr){
     arr.sort()
-    console.log(arr)
     alert(arr[1] + arr[arr.length-2])
 }
 secondBest(nums)
