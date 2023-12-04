@@ -28,3 +28,14 @@ function reverse(str){
 reverse("hello")
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
+
+function palindrome(str){
+    for(let i = 0; i < str.length/2; i++){
+        if(str[i] != str[str.length-1-i]){
+            return false
+        }
+    }
+    return true;
+}
+let str = "helleh"
+console.log(palindrome(str))
