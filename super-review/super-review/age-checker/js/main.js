@@ -6,6 +6,11 @@
 //If under 30, tell them they can not rent fancy cars affordably
 //If under over 30, tell them there is nothing left to look forward too
 
+let age = 21;
+
+if(age < 16){
+   console.log("you cannot drive")
+}
 
 //--- Harder
 //On click of the h1
