@@ -17,6 +17,14 @@ let nums = [2, 3, 4, 5]
 console.log(squared(nums))
 //Create a function that takes string
 //Print the reverse of that string to the console
+function reverse(str){
+    let rev = ""
+    for(let i = str.length - 1; i >= 0; i--){
+        rev = rev + str[i]
+    }
+    console.log(rev)
+}
 
+reverse("hello")
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
