@@ -29,7 +29,7 @@ function playAgainstBot(choice){
     if(choice == bot){
         console.log("you tied")
     }
-    if((choice == "rock" && bot == "scissors") || (choice == "scissors" && bot == "paper") (choice == "paper" && bot == "rock")){
+    if((choice == "rock" && bot == "scissors") || (choice == "scissors" && bot == "paper") || (choice == "paper" && bot == "rock")){
         console.log("you won")
     }
     else{
@@ -38,8 +38,12 @@ function playAgainstBot(choice){
 }
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
-function playXTimes(num){
-    for(let i = 0; i <num; i++){
-
+function playXTimes(numbers){
+    for(let i = 0; i <numbers.length; i++){
+        playAgainstBot(numbers[i])
     }
 }
+
+let arr = ["rock", "paper", "scissors"]
+
+playXTimes(arr)
