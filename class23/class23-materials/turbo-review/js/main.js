@@ -7,8 +7,7 @@ if(sentence.includes("?")){
 }
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
 let developer = "jr. dev, that is what I am"
-developer.replace("jr. dev", "software engineer")
-console.log(developer)
+console.log(developer.replaceAll("jr. dev", "software engineer"))
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
 function rockPaperScissors(){
@@ -30,9 +29,17 @@ function playAgainstBot(choice){
     if(choice == bot){
         console.log("you tied")
     }
-    if(choice == "rock"){
-        if(bot )
+    if((choice == "rock" && bot == "scissors") || (choice == "scissors" && bot == "paper") (choice == "paper" && bot == "rock")){
+        console.log("you won")
+    }
+    else{
+        console.log("you lost")
     }
 }
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+function playXTimes(num){
+    for(let i = 0; i <num; i++){
+
+    }
+}
