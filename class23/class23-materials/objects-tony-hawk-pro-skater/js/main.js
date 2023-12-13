@@ -17,4 +17,4 @@ function MakeSkate(board, stance, push, style){
     }
 }
 
-let modesto = new MakeSkate("local", "goofy", "regular", "street")
+let modesto = new MakeSkate("enjoi", "goofy", "regular", "street")
