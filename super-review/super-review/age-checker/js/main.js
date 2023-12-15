@@ -11,6 +11,21 @@ let age = 21;
 if(age < 16){
    console.log("you cannot drive")
 }
+else if(age < 18){
+   console.log("you cannot hate from outside the club because you cannot get in")
+}
+else if(age < 21){
+   console.log("you cannot drink")
+}
+else if(age < 25){
+   console.log("you cannot rent cars affordably")
+}
+else if(age < 30){
+   console.log("you cannot rent fancy cars afforably")
+}
+else{
+   console.log("there is nothing to look forward too")
+}
 
 //--- Harder
 //On click of the h1
