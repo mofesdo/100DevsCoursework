@@ -20,7 +20,26 @@ for(let i = 0; i < letters.length; i++){
 alert(word)
 // *Functions*
 // Create a function that returns rock, paper, lizard, spock or scissors as randomly as possible
+function rockPaperGun(){
+    let num = Math.random();
+    if(num < .2){
+        return "rock"
+    }
+    else if(num < .4){
+        return "paper"
+    }
+    else if(num < .6){
+        return "lizard"
+    }
+    else if(num < .8){
+        return "spock"
+    }
+    else{
+        return "scissors"
+    }
+}
 
+console.log(rockPaperGun())
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, scissors, lizard, or spock) and determines if they won a game of rock paper scissors against a bot using the above function
 
