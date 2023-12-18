@@ -11,3 +11,12 @@ dog.pee = function(){
     console.log("psssssss")
 }
 
+dog.growl = function(){
+    console.log("grrrrr")
+}
+
+dog.shower = function(stinky){
+    if(dog.stinky == true){
+        console.log("I need a bath!")
+    }
+}
