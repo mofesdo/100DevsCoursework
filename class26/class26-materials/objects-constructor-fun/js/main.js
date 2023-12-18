@@ -6,5 +6,20 @@ function MakePhone(brand, color, provider, price){
     this.provider = provider;
     this.price = price;
 
-    
+    this.call = function(provider){
+        if(provider == null){
+            console.log("sorry you dont have any phone providers!")
+        }
+        else{
+            console.log("ring, ring, ring!")
+        }
+    }
+
+    this.youtube = function(){
+        console.log("you are now watching youtube")
+    }
+
+    this.flashlight = function(){
+        console.log("Flashlight is now on!")
+    }
 }
