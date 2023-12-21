@@ -18,3 +18,5 @@ class MakeNetflixShow{
         console.log(`You rated this show ${num} stars!`)
     }
 }
+
+let bigMouth = new MakeNetflixShow('Big Mouth', 'raunchy animation', '5/5', '48')
