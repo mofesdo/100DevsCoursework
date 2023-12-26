@@ -1,10 +1,11 @@
 //Create a button that adds 1 to a botScore stored in localStorage 
+if(localStorage.getItem("score") == null){
+    localStorage.setItem("score", 0)
+}
+document.querySelector('button').addEventListener('click', incrementScore)
 
-localStorage.setItem("score", 0)
-document.querySelector("h2").addEventListener("click", incrementScore())
-
-incrementScore(){
-    increment = localStorage.getItem("score") + 1;
+function incrementScore(){
+    increment = Number(localStorage.getItem("score")) + 1;
     localStorage.setItem("score", increment)
 }
 
