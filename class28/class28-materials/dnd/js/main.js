@@ -8,7 +8,10 @@ function getFetch(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-       
+       console.log(data)
+       for(let i = 0; i < data.subclasses.length; i ++){
+        document.querySelector("ul").innerText += data.subclasses[i].name + " "
+       }
       })
       .catch(err => {
           console.log(`error ${err}`)
