@@ -1,5 +1,6 @@
 //Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch)
+localStorage.clear();
 
 
 function getFetch(){
@@ -11,8 +12,14 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data.title)
-        localStorage.setItem("books", data.title);
-        document.querySelector(".books").innerHTML += localStorage.getItem("books") + " ";
+        if(!localStorage.getItem("books")){
+          let addBook = localStorage.setItem("books", data.title)
+        }
+        else{
+          let addBook = localStorage.getItem("books") + "; " + data.title
+          localStorage.setItem("books", addBook);
+        }
+        document.querySelector(".books").innerHTML = localStorage.getItem("books");
 
       })
       .catch(err => {
