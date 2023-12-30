@@ -1,7 +1,6 @@
 //Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch)
-localStorage.clear();
-
+document.querySelector(".books").innerHTML = localStorage.getItem("books");
 
 function getFetch(){
   const isbn = document.querySelector('input').value
@@ -15,7 +14,7 @@ function getFetch(){
         if(!localStorage.getItem("books")){
           let addBook = localStorage.setItem("books", data.title)
         }
-        else{
+        else if(!localStorage.getItem("books").includes(data.title)){
           let addBook = localStorage.getItem("books") + "; " + data.title
           localStorage.setItem("books", addBook);
         }
