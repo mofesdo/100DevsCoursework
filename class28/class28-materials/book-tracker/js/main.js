@@ -1,6 +1,7 @@
 //Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch)
 
+
 function getFetch(){
   const isbn = document.querySelector('input').value
   console.log(isbn)
@@ -10,6 +11,8 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data.title)
+        localStorage.setItem("books", data.title);
+        document.querySelector(".books").innerHTML += localStorage.getItem("books") + " ";
 
       })
       .catch(err => {
