@@ -15,10 +15,10 @@ console.log(totalCandies)
 //Create one function that converts a Fahrenheit value to Celcius and another fuction that tells you wheither or not charmander can battle
 function charmanderBattle(degree){
     if(degree > 0){
-        console.log("charmander can battle!")
+        return "charmander can battle!"
     }
     else{
-        console.log("charmander cannot battle!")
+        return "charmander cannot battle!"
     }
 }
 
@@ -37,4 +37,4 @@ function pikachu(trainerPKM){
     }
 }
 
-console.log(pikachu(6))
+pikachu(6)
