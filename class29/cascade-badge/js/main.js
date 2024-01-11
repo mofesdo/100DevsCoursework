@@ -48,3 +48,13 @@ const multiple = array1.filter((x, index) => {
 console.log(multiple)
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+function sumofArr(a){
+    let sum = 0;
+    for(let i = 0; i < a.length; i++){
+        sum += Number(a[i]);
+    }
+    return sum
+}
+
+let numbers = [1, 2, "3", "4"]
+console.log(sumofArr(numbers))
